@@ -33,9 +33,7 @@ class App extends Component {
     this.gen = null;
     console.log('exited');
   }
-  createResult() {
-    
-  }
+
 
   render() {
     return (
@@ -53,7 +51,7 @@ class App extends Component {
 
         {/* Main container End */}
         </div>
-        <button onClick="snackbar()">Click Me</button>
+        
         <div className="snackbar" id="snackbar">
           This is the snack bar
         </div>

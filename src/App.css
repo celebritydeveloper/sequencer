@@ -77,7 +77,7 @@ body {
 
 /* Sequence Component Styling */
 .sequence {
-  background: linear-gradient(to top, rgba(255,0,0,0), rgb(220, 104, 9)), url(./img/sequence.jpeg) no-repeat;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgb(220, 104, 9));
   background-size: cover;
   color: #000;
   float: left;
