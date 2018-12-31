@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Sequencer from './sequencerComponents/Sequence.js';
 import Result from './sequencerComponents/Result';
-import generator from './sequenceFunctions/generator';
-import snackbar from './snackbar';
+import generator from './sequenceFunctions/Generator';
 
 class App extends Component {
   constructor(props) {
@@ -51,7 +50,7 @@ class App extends Component {
 
         {/* Main container End */}
         </div>
-        
+
         <div className="snackbar" id="snackbar">
           This is the snack bar
         </div>
