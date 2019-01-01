@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Sequencer from './sequencerComponents/Sequence.js';
+import Result from './sequencerComponents/Result';
+import generator from './sequenceFunctions/generator';
 
 
 class App extends Component {
