@@ -6,33 +6,33 @@ import generator from './sequenceFunctions/generator';
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.gen = null;
-  //   this.nextGen = this.nextGen.bind(this);
-  //   this.loadSequence = this.loadSequence.bind(this);
-  //   this.exitSequence = this.exitSequence.bind(this);
-  // }
+  constructor(props) {
+    super(props);
+    this.gen = null;
+    this.nextGen = this.nextGen.bind(this);
+    this.loadSequence = this.loadSequence.bind(this);
+    this.exitSequence = this.exitSequence.bind(this);
+  }
   
-  // loadSequence(sequencer) {
-  //   if (this.gen === null){
-  //       this.gen = generator(sequencer);
-  //   }
-  //   else {
-  //     console.log('A sequence is currently running');
-  //   }
-  // }
-  // nextGen(){
-  //   if (this.gen) {
-  //     console.log(this.gen.next());
-  //   } else{
-  //     console.log('No sequence is running')
-  //   }
-  // }
-  // exitSequence() {
-  //   this.gen = null;
-  //   console.log('exited');
-  // }
+  loadSequence(sequencer) {
+    if (this.gen === null){
+        this.gen = generator(sequencer);
+    }
+    else {
+      console.log('A sequence is currently running');
+    }
+  }
+  nextGen(){
+    if (this.gen) {
+      console.log(this.gen.next());
+    } else{
+      console.log('No sequence is running')
+    }
+  }
+  exitSequence() {
+    this.gen = null;
+    console.log('exited');
+  }
 
 
   render() {
